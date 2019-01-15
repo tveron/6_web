@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Задание 6</title>
+    <script type="text/javascript" src="6.js"></script>
+    <style type="text/css">
+        canvas { border: 1px solid blue; }
+    </style>
+</head>
+
+<body onload="init()">
+    <canvas id="canvas" width="600" height="400">
+    </canvas>
+    <form>
+        <input type = "button" value = "Стоп" onclick="if (idTimer) {clearInterval(idTimer); idTimer = null}">
+        <input type = "button" value = "Вверх" onclick="move(0)">
+        <input type = "button" value = "Вправо" onclick="move(1)">
+        <input type = "button" value = "Вниз" onclick="move(2)">
+        <input type = "button" value = "Влево" onclick="move(3)">
+        <input type = "button" value = "Рандом" onclick="move(4)">
+        <input type = "button" value = "Хаос" onclick="move(5)">
+    </form>
+</body>
+</html>
